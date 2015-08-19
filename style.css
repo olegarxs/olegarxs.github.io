@@ -1,0 +1,152 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+p{
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 400;
+    font-size: 2em;
+    color: white;
+}
+h1{
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 500;
+    padding-top: 40px;
+    font-size: 4em;
+    color: white;
+     
+    
+}
+header {
+    display: flex;
+    min-width: 1024px;
+    width: 100%;    
+    height: 100%;
+    background-image: url('img/rock.jpg');
+    background-size: cover; 
+
+}
+header h1{
+    padding: 0;
+    margin-bottom: 20px;
+}
+footer{
+    position:relative;
+    width: 100%;
+    height: 350px;
+    background-color: #292830;  
+}  
+.footer h1{
+    color: black;
+}
+
+.page1{
+    background:#ffebbc ; 
+    height: 480px;;
+    
+}
+.page1 h1{
+    color: black;
+}
+.page2  {
+    height: 400px;    
+    background: #5da7ae;
+    
+}
+.page3  {
+    background-color: #543d46;   
+}
+.picture{
+    margin: 20px;
+    width: 200px; 
+    height: 200px;
+  
+}
+.donate{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: center; 
+    
+      
+}
+#name{
+    color: #2fc989;
+}
+#circle{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ED5E42;   
+    border-radius: 100px;
+    background: #f0ebeb;  
+    display: flex;
+    margin: 20px;
+    transition: background 0.3s ease,color 0.2s linear;
+    
+}
+#circle>p{
+    color: #ED5E42;
+    margin: auto;
+    
+}
+#circle:hover{
+
+background:#ED5E42;   
+    
+}
+#circle:hover>p{
+    color: #fff; 
+}
+.soc {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; 
+}
+.icon{
+    height: 100px;
+    width: 100px;
+    margin: 0 20px;  
+}
+footer p{
+    
+    position:absolute; 
+	bottom:15px;
+    left: 15px;
+    
+    font-size: 1.3em;    
+}
+#scroller{
+    position: fixed;    
+    bottom: 50px;
+    right: 50px;
+    background: url(img/upp.svg);
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	display:none;
+}
+.content{
+  margin: auto;
+}
+.console {
+    padding: 5px;
+    border-radius: 10px;
+    height: 100px;
+    width: 500px;    
+    background: #393737;
+    margin:auto;
+}
+.console p{
+    padding: 5px;
+    text-align: left;
+    font-size: 1em;
+    font-family: sans-serif;
+    
+}
+

@@ -1,0 +1,92 @@
+<head>
+    <title>hello</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:500,400" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script language="JavaScript">
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 0) {
+                    $('#scroller').fadeIn();
+                } else {
+                    $('#scroller').fadeOut();
+                }
+            });
+            $('#scroller').click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <div class="content">
+            <h1>My Name <span id="name">Okrul Oleg</span></h1>
+            <p>I'm web-designer and mobile developer apps</p>
+        </div>
+
+    </header>
+
+    <div class="page1" >
+
+        <h1>I know...</h1>
+        <img src="img/circle.png" alt="" class="picture" style="margin-top: 20px; height: 200px;">
+        <div class="console">
+            <p>1. HTML & CSS</p>
+            <p>2. JavaScript</p>     
+        </div>
+
+
+    </div>
+
+    <div class="page2">
+        <h1>My Project</h1>
+        <p>Projects currently being developed.</p>
+    </div>
+
+    <div class="page3">
+        <h1>Donate</h1>
+        <p>New MacBook - New Opportunities</p>
+        <div class="donate">
+            <a href="#">
+                <div id="circle">
+                    <p>Donate for Russian</p>
+                </div>
+            </a>
+            <a href="#">
+                <div id="circle">
+                    <p>Donate for International</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <h1>CONTACT ME</h1>
+
+        <div class="soc">
+            <div class="icon">
+                <img src="img/VK.com-logo.svg" alt="VK" width="100px" height="100px">
+            </div>
+            <div class="icon">
+                <img src="img/Telegram_logo.svg" alt="VK" width="100px" height="100px">
+            </div>
+            <div class="icon">
+                <img src="img/instagram-icon.svg" alt="VK" width="100px" height="100px">
+            </div>
+
+        </div>
+        <p>Made with <img src="img/Love.svg" alt="VK" width="20px" height="20px"> in Belarus :D</p>
+
+    </footer>
+
+    <div id="scroller" style="display: block;"></div>
+
+</body>
