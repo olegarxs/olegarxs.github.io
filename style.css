@@ -30,7 +30,7 @@ header {
     height: 100%;
     background-image: url('img/rock.jpg');
     background-size: cover; 
-
+    background-attachment: fixed;
 }
 header h1{
     padding: 0;
