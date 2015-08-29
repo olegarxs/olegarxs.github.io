@@ -25,7 +25,6 @@ h1{
 }
 header {
     display: flex;
-    min-width: 1024px;
     width: 100%;    
     height: 100%;
     background-image: url('img/rock.jpg');
@@ -47,6 +46,7 @@ footer{
 }
 
 .page1{
+    
     background:#ffebbc ; 
     height: 480px;;
     
@@ -70,7 +70,7 @@ footer{
 }
 .donate{
     display: flex;
-    width: 50%;
+    flex-wrap:wrap;
     margin: auto;
     justify-content: center; 
     
@@ -80,14 +80,14 @@ footer{
     color: #2fc989;
 }
 #circle{
+    display: flex;
     width: 200px;
     height: 200px;
     border: 2px solid #ED5E42;   
     border-radius: 100px;
     background: #f0ebeb;  
-    display: flex;
     margin: 20px;
-    transition: background 0.3s ease,color 0.2s linear;
+    transition: 0.3s;
     
 }
 #circle>p{
@@ -113,17 +113,15 @@ background:#ED5E42;
     width: 100px;
     margin: 0 20px;  
 }
-footer p{
-    
+footer p{ 
     position:absolute; 
 	bottom:15px;
     left: 15px;
-    
     font-size: 1.3em;    
 }
 #scroller{
     position: fixed;    
-    bottom: 50px;
+    bottom: 30px;
     right: 50px;
     background: url(img/upp.svg);
 	width: 50px;
@@ -135,10 +133,11 @@ footer p{
   margin: auto;
 }
 .console {
+    min-width: 400px;
     padding: 5px;
     border-radius: 10px;
     height: 100px;
-    width: 500px;    
+    width: 40%;    
     background: #393737;
     margin:auto;
 }
