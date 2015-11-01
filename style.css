@@ -5,6 +5,7 @@
     text-align: center;
 }
 
+
 a{
     text-decoration: none;
 }
@@ -20,8 +21,6 @@ h1{
     padding-top: 40px;
     font-size: 4em;
     color: white;
-     
-    
 }
 header {
     display: flex;
@@ -153,4 +152,16 @@ footer p{
 .love {
     font-size: 1.5em;
     color:red;
+}
+@media (max-width:34em) {
+    header{
+        background-image: url('img/rock-mobile.jpg');
+    }
+    p{
+    font-size: 1,5em;
+}
+    h1{
+    font-size: 3em;
+    
+}
 }
