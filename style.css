@@ -1,167 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
+:root{
+    --rectSize: 300px;
+    --mainHeight:calc(var(--rectSize) * 1.414);
+}
 *{
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    box-sizing: border-box;
 }
-
-
-a{
-    text-decoration: none;
-}
-p{
-    font-family: 'Ubuntu', sans-serif; 
-    font-weight: 400;
-    font-size: 2em;
-    color: white;
-}
-h1{
-    font-family: 'Ubuntu', sans-serif; 
-    font-weight: 500;
-    padding-top: 40px;
-    font-size: 4em;
+body {
+    background: black;
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 header {
     display: flex;
-    width: 100%;    
-    height: 100%;
-    background-image: url('img/rock.jpg');
-    background-size: cover; 
-    background-attachment: fixed;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px;
 }
-header h1{
-    padding: 0;
-    margin-bottom: 20px;
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    font-size: 20pt;
+    margin-left: 20px;
+}
+ul{
+    box-sizing: border-box;
+}
+li{
+    display: inline-block;
+    font-size: 15pt;
+    list-style-type: none;
+    margin-right:30px;
+    text-transform:uppercase; 
+    box-sizing: border-box;
+    height: 30px;
+}
+li:hover{
+    cursor: pointer;
+    border-bottom:solid white 3px;
+    padding-bottom: 5px; 
+    
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--mainHeight);
+}
+.rect{
+    border: solid 3px;
+    height: var(--rectSize);
+    width: var(--rectSize);
+    transform: rotate(45deg);
+}
+.rect img{
+    margin: -0% -10% -0% 18%;
+    transform: rotate(-45deg);
+    height: 300px;
+}
+.rect hr{
+    transform: rotate(-45deg);
+    margin: -50% -0% -0% 18%;
+}
+.rect p{
+    text-align: center;
+    transform: rotate(-45deg);
+    margin: 0% 0% 0% 45%;
+    font-size: 20pt;
+}
+.rect code{
+    font-size:15pt;
 }
 footer{
-    position:relative;
-    width: 100%;
-    height: 350px;
-    background-color: #292830;  
-}  
-.footer h1{
-    color: black;
-}
-
-.page1{
-    
-    background:#ffebbc ; 
-    height: 480px;;
-    
-}
-.page1 h1{
-    color: black;
-}
-.page2  {
-    height: 400px;    
-    background: #5da7ae;
-    
-}
-.page3  {
-    background-color: #543d46;   
-}
-.picture{
-    margin: 20px;
-    width: 200px; 
-    height: 200px;
-  
-}
-.donate{
-    display: flex;
-    flex-wrap:wrap;
-    margin: auto;
-    justify-content: center; 
-    
-      
-}
-#name{
-    color: #2fc989;
-}
-#circle{
-    display: flex;
-    width: 200px;
-    height: 200px;
-    border: 2px solid #ED5E42;   
-    border-radius: 100px;
-    background: #f0ebeb;  
-    margin: 20px;
-    transition: 0.3s;
-    
-}
-#circle>p{
-    color: #ED5E42;
-    margin: auto;
-    
-}
-#circle:hover{
-
-background:#ED5E42;   
-    
-}
-#circle:hover>p{
-    color: #fff; 
-}
-.soc {
     margin-top: 40px;
-    display: flex;
-    justify-content: center; 
-}
-.icon{
-    height: 100px;
-    width: 100px;
-    margin: 0 20px;  
-}
-footer p{ 
-    position:absolute; 
-	bottom:15px;
-    left: 15px;
-    font-size: 1.3em;    
-}
-#scroller{
-    position: fixed;    
-    bottom: 30px;
-    right: 50px;
-    background: url(img/upp.svg);
-	width: 50px;
-	height: 50px;
-	cursor: pointer;
-	display:none;
-}
-.content{
-  margin: auto;
-}
-.console {
-    
-    padding: 5px;
-    border-radius: 10px;
-    height: 100px;
-    width: 40%;    
-    background: #393737;
-    margin:auto;
-}
-.console p{
-    padding: 5px;
-    text-align: left;
-    font-size: 1em;
-    font-family: sans-serif;
-    
-}
-
-
-.love {
-    font-size: 1.5em;
-    color:red;
-}
-@media (max-width:34em) {
-    header{
-        background-image: url('img/rock-mobile.jpg');
-    }
-    p{
-    font-size: 18px;
-}
-    h1{
-    font-size: 3em;
-    
-}
+    text-align: center;
 }
