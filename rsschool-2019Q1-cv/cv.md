@@ -25,11 +25,11 @@ Telegram: [@olegarxs](https://t.me/olegarxs)
 
 ----
 ### Skills: 
-* Адаптивная и кроссбраузерная вёрстка 
-* HTML5, JS, CSS3, 
-* Bootstrap 4
-* PhotoShop, Illustrator
-* GIT
+* Адаптивная и кроссбраузерная вёрстка; 
+* HTML5, JS, CSS3;
+* Bootstrap 4;
+* PhotoShop, Illustrator;
+* GIT;
 
 ----
 ### Примеры работ:
